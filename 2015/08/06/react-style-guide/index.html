@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>React Style Guide | yicone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="在项目中使用 React 已经有一段时间，是时候开始整理一些编码规范和向导的内容了。
+计划先从网络上翻阅一些热门资料开始，陆续完善这个工作。
+本篇先从Airbnb 的Style Guide 开始，将其中的内容，分为三部分摘录：
+
+目前未注意的主要方面
+目前未注意的次要方面  
+不予采纳的规则
+
+第二篇参考的文章，并不是一个正式的文档，一些建议与Airbnb 相合，除一些补充之外，一些说明和代码示">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React Style Guide">
+<meta property="og:url" content="http://yoursite.com/2015/08/06/react-style-guide/index.html">
+<meta property="og:site_name" content="yicone">
+<meta property="og:description" content="在项目中使用 React 已经有一段时间，是时候开始整理一些编码规范和向导的内容了。
+计划先从网络上翻阅一些热门资料开始，陆续完善这个工作。
+本篇先从Airbnb 的Style Guide 开始，将其中的内容，分为三部分摘录：
+
+目前未注意的主要方面
+目前未注意的次要方面  
+不予采纳的规则
+
+第二篇参考的文章，并不是一个正式的文档，一些建议与Airbnb 相合，除一些补充之外，一些说明和代码示">
+<meta property="og:updated_time" content="2015-08-06T09:51:05.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="React Style Guide">
+<meta name="twitter:description" content="在项目中使用 React 已经有一段时间，是时候开始整理一些编码规范和向导的内容了。
+计划先从网络上翻阅一些热门资料开始，陆续完善这个工作。
+本篇先从Airbnb 的Style Guide 开始，将其中的内容，分为三部分摘录：
+
+目前未注意的主要方面
+目前未注意的次要方面  
+不予采纳的规则
+
+第二篇参考的文章，并不是一个正式的文档，一些建议与Airbnb 相合，除一些补充之外，一些说明和代码示">
+  
+    <link rel="alternative" href="/atom.xml" title="yicone" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">yicone</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-react-style-guide" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/08/06/react-style-guide/" class="article-date">
+  <time datetime="2015-08-06T07:29:50.000Z" itemprop="datePublished">2015-08-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      React Style Guide
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在项目中使用 React 已经有一段时间，是时候开始整理一些编码规范和向导的内容了。</p>
+<p>计划先从网络上翻阅一些热门资料开始，陆续完善这个工作。</p>
+<p>本篇先从Airbnb 的Style Guide 开始，将其中的内容，分为三部分摘录：</p>
+<ol>
+<li>目前未注意的主要方面</li>
+<li>目前未注意的次要方面  </li>
+<li>不予采纳的规则</li>
+</ol>
+<p>第二篇参考的文章，并不是一个正式的文档，一些建议与Airbnb 相合，除一些补充之外，一些说明和代码示例也有参考意义。</p>
+<h2 id="一-_Airbnb_React/JSX_Style_Guide">一. Airbnb React/JSX Style Guide</h2><p><a href="https://github.com/airbnb/javascript/tree/master/react" target="_blank" rel="external">https://github.com/airbnb/javascript/tree/master/react</a></p>
+<h2 id="1-_目前未注意的主要方面">1. 目前未注意的主要方面</h2><h3 id="Class_vs_React-createClass">Class vs React.createClass</h3><ul>
+<li><p>Use class extends React.Component unless you have a very good reason to use mixins.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> Listing = React.createClass(&#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="title">div</span> /&gt;</span>;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Listing</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="title">div</span> /&gt;</span>;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Naming"><code>Naming</code></h3><ul>
+<li><strong>Extensions</strong>: Use <code>.jsx</code> extension for React components.</li>
+<li><strong>Filename</strong>: Use PascalCase for filenames. E.g., <code>ReservationCard.jsx</code></li>
+<li><p><strong>Reference Naming</strong>: Use PascalCase for React components and camelCase for their instances:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> reservationCard = <span class="built_in">require</span>(<span class="string">'./ReservationCard'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> ReservationCard = <span class="built_in">require</span>(<span class="string">'./ReservationCard'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> ReservationItem = <span class="xml"><span class="tag">&lt;<span class="title">ReservationCard</span> /&gt;</span>;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> reservationItem = <span class="xml"><span class="tag">&lt;<span class="title">ReservationCard</span> /&gt;</span>;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Component Naming</strong>: Use the filename as the component name. For example, <code>ReservationCard.jsx</code> should have a reference name of ReservationCard. However, for root components of a directory, use <code>index.jsx</code> as the filename and use the directory name as the component name:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> Footer = <span class="built_in">require</span>(<span class="string">'./Footer/Footer.jsx'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="keyword">const</span> Footer = <span class="built_in">require</span>(<span class="string">'./Footer/index.jsx'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="keyword">const</span> Footer = <span class="built_in">require</span>(<span class="string">'./Footer'</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Ordering">Ordering</h3><p>Ordering for class extends React.Component:</p>
+<ol>
+<li>constructor</li>
+<li>optional static methods</li>
+<li>getChildContext</li>
+<li>componentWillMount</li>
+<li>componentDidMount</li>
+<li>componentWillReceiveProps</li>
+<li>shouldComponentUpdate</li>
+<li>componentWillUpdate</li>
+<li>componentDidUpdate</li>
+<li>componentWillUnmount</li>
+<li>clickHandlers or eventHandlers like onClickSubmit() or onChangeDescription()</li>
+<li>getter methods for render like getSelectReason() or getFooterContent()</li>
+<li>Optional render methods like renderNavigation() or renderProfilePicture()</li>
+<li><p>render</p>
+<ul>
+<li>How to define propTypes, defaultProps, contextTypes, etc…</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component, PropTypes &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> propTypes = &#123;</span><br><span class="line">  id: PropTypes.number.isRequired,</span><br><span class="line">  url: PropTypes.string.isRequired,</span><br><span class="line">  text: PropTypes.string,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> defaultProps = &#123;</span><br><span class="line">  text: <span class="string">'Hello World'</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Link</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  static methodsAreOk() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">&#123;this.props.url&#125;</span> <span class="attribute">data-id</span>=<span class="value">&#123;this.props.id&#125;</span>&gt;</span>&#123;this.props.text&#125;<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Link.propTypes = propTypes;</span><br><span class="line">Link.defaultProps = defaultProps;</span><br><span class="line"></span><br><span class="line">export default Link;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>Ordering for React.createClass:</p>
+<ol>
+<li>displayName</li>
+<li>propTypes</li>
+<li>contextTypes</li>
+<li>childContextTypes</li>
+<li>mixins</li>
+<li>statics</li>
+<li>defaultProps</li>
+<li>getDefaultProps</li>
+<li>getInitialState</li>
+<li>getChildContext</li>
+<li>componentWillMount</li>
+<li>componentDidMount</li>
+<li>componentWillReceiveProps</li>
+<li>shouldComponentUpdate</li>
+<li>componentWillUpdate</li>
+<li>componentDidUpdate</li>
+<li>componentWillUnmount</li>
+<li>clickHandlers or eventHandlers like onClickSubmit() or onChangeDescription()</li>
+<li>getter methods for render like getSelectReason() or getFooterContent()</li>
+<li>Optional render methods like renderNavigation() or renderProfilePicture()</li>
+<li>render</li>
+</ol>
+<h2 id="2-_目前未注意的次要方面">2. 目前未注意的次要方面</h2><h3 id="Quotes">Quotes</h3><ul>
+<li><p>Always use double quotes (<code>&quot;</code>) for JSX attributes, but single quotes for all other JS.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line">&lt;Foo bar=<span class="string">'bar'</span> /&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line">&lt;Foo bar=<span class="string">"bar"</span> /&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// bad</span></span><br><span class="line">&lt;Foo style=&#123;&#123; left: <span class="string">"20px"</span> &#125;&#125; /&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line">&lt;Foo style=&#123;&#123; left: <span class="string">'20px'</span> &#125;&#125; /&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Props">Props</h3><ul>
+<li><p>Always use camelCase for prop names.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line">&lt;Foo</span><br><span class="line">  UserName=<span class="string">"hello"</span></span><br><span class="line">  phone_number=&#123;<span class="number">12345678</span>&#125;</span><br><span class="line">/&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line">&lt;Foo</span><br><span class="line">  userName=<span class="string">"hello"</span></span><br><span class="line">  phoneNumber=&#123;<span class="number">12345678</span>&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Tags">Tags</h3><ul>
+<li>Always self-close tags that have no children.<blockquote>
+<p>代码示例可从原文查看</p>
+</blockquote>
+</li>
+<li>If your component has multi-line properties, close its tag on a new line.<blockquote>
+<p>代码示例可从原文查看</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="3-_不予采纳的规则">3. 不予采纳的规则</h2><h3 id="Methods">Methods</h3><ul>
+<li><p>Do not use underscore prefix for internal methods of a React component.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line">React.createClass(&#123;</span><br><span class="line">  _onClickSubmit() &#123;</span><br><span class="line">    <span class="comment">// do stuff</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// other stuff</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  onClickSubmit() &#123;</span><br><span class="line">    <span class="comment">// do stuff</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// other stuff</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="二-_An_opinionated_guide_to_React-js_best_practices_and_conventions">二. An opinionated guide to React.js best practices and conventions</h2><p><a href="https://web-design-weekly.com/2015/01/29/opinionated-guide-react-js-best-practices-conventions/" target="_blank" rel="external">https://web-design-weekly.com/2015/01/29/opinionated-guide-react-js-best-practices-conventions/</a></p>
+<ul>
+<li><p>Component organisation</p>
+<blockquote>
+<p>Airbnb 的 Ordering 部分更完整。此处补充了自有函数(<em>_methodName</em>)的位置</p>
+</blockquote>
+</li>
+<li><p>Always set propTypes for validation and self-documentation</p>
+</li>
+<li><p>Conditional JSX</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> optionalElement;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">this</span>.props.condition) &#123;</span><br><span class="line">    optionalElement = (<span class="xml"><span class="tag">&lt;<span class="title">div</span>&gt;</span> … <span class="tag">&lt;/<span class="title">div</span>&gt;</span>)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> (</span><br><span class="line">    <span class="xml"><span class="tag">&lt;<span class="title">div</span>&gt;</span></span><br><span class="line">        …</span><br><span class="line">        &#123;optionalElement&#125;</span><br><span class="line">        …</span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">)</span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/08/06/react-style-guide/" data-id="cid00ri7e0001sc12fva7st3v" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/">React</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/08/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/React/" style="font-size: 10px;">React</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/08/06/react-style-guide/">React Style Guide</a>
+          </li>
+        
+          <li>
+            <a href="/2015/08/06/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 yicone<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
